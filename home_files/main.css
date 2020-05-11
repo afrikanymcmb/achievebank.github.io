@@ -1,0 +1,1330 @@
+@charset "utf-8";
+html {
+ overflow-y: scroll !important; /* Scrollbar to be fixed either there is content available or not.*/
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	background-image: url(bg.gif);
+	margin: 0px;
+}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+p{
+	margin:0px;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: underline;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.mainTable{
+	width: 1000px;
+	height: 100%;
+	background-color: #FFFFFF;
+}
+
+/***************************************************************** Tabs Navigation Style ******************************************************/
+.tabText{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+}
+
+.tabTextOver{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+}
+.menuSeparator{
+	display: block;
+	width: 2px;
+	height: 38px;
+	background-image:url(menu_seprator.gif);
+}
+.tab {
+	display: block;
+	width: 143px;
+	height: 38px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	background-image:url(menu_bg.gif);
+	line-height:35px;
+}
+.tab:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #12609f;
+	background-image:url(menu_tabOver.gif);
+}
+.tabOver {
+	display: block;
+	width: 143px;
+	height: 38px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #212c3c;
+	background-image:url(menu_tabOver.gif);
+	line-height:35px;
+	cursor: pointer;
+}
+.tabSelected {
+	width: 143px;
+	height: 38px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+	background-image:url(menu_selectedtab_bg.gif);
+	cursor: pointer;
+}
+.emptyTab{
+	height:38px;
+	background-image:url(menu_bg.gif);
+}
+.lnkHelpLogout {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.lnkHelpLogout:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.lnkSubMenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.lnkSubMenu:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.dropDownBg {
+	background-color: #ffffff;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+.lnkDropDown {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #125e9e;
+	text-decoration: none;
+}
+.lnkDropDown:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #125e9e;
+	text-decoration: none;
+}
+.txtDropDownDescription {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #999999;
+	text-decoration: none;
+	padding-left: 4px;
+}
+.dropDownSeprator {
+	width: 228px;
+	text-align: center;	
+	height:1px;
+	background-color:#cddee5;
+}
+
+.dropDown {
+	width: 228px;
+	text-align: center;
+	height: 1px;
+	background-repeat: repeat-x;
+}
+
+.lnkDropDownDescription {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #656e6e;
+	text-decoration: none;
+}
+.lnkDropDownDescription:hover  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #656e6e;
+	text-decoration: none;
+}
+
+.menuTable:hover{
+	display: block;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	background-color: #dee6e9;
+
+}
+.menuItem{
+	padding-left:5px;
+	padding-top:5px;
+}
+.menuTable{
+	display: block;
+	cursor: pointer;
+	text-decoration: none;
+
+}
+
+/***************************************************************** Left Side Widgets ***************************************************************/
+
+.lnkQuickLinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #5f5f5f;
+	text-decoration: none;
+}
+.lnkQuickLinks:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.lnkSearchAgent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #474747;
+	text-decoration: none;
+}
+.lnkSearchAgent:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #474747;
+	text-decoration: underline;
+}
+.lnkNews {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #ed1c16;
+	text-decoration: none;
+}
+.lnkNews:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.lnkAnnouncements {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #ed1c16;
+	text-decoration: none;
+}
+.lnkAnnouncements:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
+/***************************************************************** Look & Feel ***************************************************************/
+.widgetHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.widgetBg {
+	background-color: #FFFFFF;
+}
+.aroundBg {
+	background-color: #dee6e9;
+}
+
+/***************************************************************** Footer Styles ***************************************************************/
+
+.txtFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.lnkFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: underline;
+}
+.lnkFooter:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+
+/***************************************************************** Homepage Styles ***************************************************************/
+.pageTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.pageDescription {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #424242;
+	text-decoration: none;
+	line-height: 18px;
+}
+.txtMandatory {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+	line-height: 18px;
+}
+.txtDate {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #424242;
+	text-decoration: none;
+}
+.txtLastLogin {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #838383;
+	text-decoration: none;
+}
+.middleRoundedBorder {
+	border-left: 1px solid #dad6bf;
+	border-right: 1px solid #dad6bf;
+}
+.homePanelHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.lnkHome {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #3d505e;
+	text-decoration: none;
+}
+.lnkHome:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: underline;
+}
+.lnkHomePanel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #999999;
+	text-decoration: none;
+}
+.txtHomePanelBalance {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #125e9e;
+	text-decoration: none;
+}
+.txtHomePanel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.lnkHomePanel:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #007fbb;
+	text-decoration: underline;
+}
+.lnkMessages {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.lnkMessages:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: underline;
+}
+
+/***************************************************************** General Styles ***************************************************************/
+
+.txtStyle01 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.txtStyle02 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #125e9e;
+	text-decoration: none;
+}
+.lnkStyle01 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1a6b91;
+	text-decoration: underline;
+}
+.lnkStyle01:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1a6b91;
+	text-decoration: none;
+}
+.lnkStyle02 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #ed1c16;
+	text-decoration: underline;
+}
+.lnkStyle02:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.txtNotificationsInfo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #1a6b91;
+	text-decoration: none;
+	padding-bottom: 7px;
+}
+.txtStyle03 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #999999;
+	text-decoration: none;
+}
+.txtStyle04 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.txtSummary {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #999999;
+	text-decoration: none;
+}
+.txtSummaryHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #125e9e;
+	text-decoration: none;
+}
+.topMargin {
+	margin-top: 5px;
+}
+.txtWeather {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.tdStyle{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+
+/***************************************************************** Grid Styles ***************************************************************/
+
+.gridRoundedBorder {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #dee6e9;
+	border-left-color: #dee6e9;
+}
+.gridHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;	
+}
+.gridSubHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #0e6fa7;
+}
+.gridBorders {
+	background-color: #ece9d8;
+}
+.txtGrid {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.lnkGridSubHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+.lnkGridSubHeading:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: underline;
+}
+.lnkGrid {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #125e9e;
+	text-decoration: underline;
+}
+.lnkGrid:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #125e9e;
+	text-decoration: none;
+}
+.txtShowing {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color:#125e9e;
+	text-decoration: none;
+	padding-top: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.gridTabSelectedBg {
+	background-color: #0e6fa7;
+}
+.gridTabUnselectedBg {
+	background-color: #dee6e9;
+}
+.lnkGridTabSelected {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+.lnkGridTabSelected:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: underline;
+}
+.lnkGridTabUnselected {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #7ba3ba;
+	text-decoration: none;
+}
+.lnkGridTabUnselected:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+.lnkAlphabets {
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	color: #666666;
+	text-decoration: none;
+	background-color:#f0f0f0;
+	line-height:20px;
+}
+.lnkAlphabets:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	background-color:#0e6fa7;
+}
+.selectedAlphabet{
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	background-color:#0e6fa7;
+	line-height:20px;
+}
+.txtGridBold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	background-color:#FFFFFF;
+}
+.gridBgEven {
+	background-color: #f3f3f3;
+}
+.gridBgOdd {
+	background-color: #ffffff;
+}
+.gridStatement {
+	border-bottom: 1px solid #ece9d8;
+}
+/***************************************************************** Form Styles ***************************************************************/
+
+.txtBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #cccccc;
+
+}
+.txtBoxDisabled {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #eeeeee;
+	border: 1px solid #CCCCCC;
+}
+.txtArea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #cccccc;
+    overflow-y: scroll !important; /* Scrollbar to be fixed either there is content available or not.*/
+}
+.txtDescBox{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	width: 400px;
+	height: 110px;
+    overflow-y: scroll !important; /* Scrollbar to be fixed either there is content available or not.*/
+}
+.txtComboBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #cccccc;
+	height: 20px;
+}
+.txtMultiSelect {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #cccccc;
+}
+.txtForm {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color:#125e9e;
+	text-decoration: none;
+}
+.txtForm02 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #125e9e;
+	text-decoration: none;
+}
+.txtForm02_Underline {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #125e9e;
+	text-decoration: none;
+	border-bottom: 1px solid #ece9d8;
+}
+.buttons {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	background-image: url(../../../images/btns/buttonsBG.gif);
+	background-repeat: repeat-x;
+	height: 28px;
+	min-width: 75px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-style:solid;
+	border-top-color: #e1e1e1;
+	border-right-color: #a1a1a1;
+	border-bottom-color: #a1a1a1;
+	border-left-color: #e1e1e1;
+	background-position: bottom;
+	cursor: pointer;
+	padding:5px 10px;
+	margin-right:3px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+}
+.buttonArrow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	background-image: url(../../../images/btns/buttonsBG.gif);
+	background-repeat: repeat-x;
+	height: 28px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #e1e1e1;
+	border-right-color: #a1a1a1;
+	border-bottom-color: #a1a1a1;
+	border-left-color: #e1e1e1;
+	background-position: bottom;
+	cursor: pointer;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	
+}
+
+.buttons:hover {
+	border-top-color: #a1a1a1;
+	border-right-color: #a1a1a1;
+	border-bottom-color: #a1a1a1;
+	border-left-color: #a1a1a1;
+	
+}
+.buttons:ACTIVE{
+	background-image: url(../../../images/btns/buttonsBG_hover.gif);
+}
+
+.codeImgBorder {
+	border: 1px solid #CCCCCC;
+}
+.lnkForm {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #125e9e;
+	text-decoration: none;
+}
+.lnkForm:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #125e9e;
+	text-decoration: underline;
+}
+.lnkButtons {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	cursor: pointer;
+}
+.lnkButtons:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.txtAmount {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	text-align: right;
+	width: 100;
+}
+
+
+/************************************************************ Info Bar (Error, Notification, Success) ****************************************************/
+.infoErrorBg {
+	background-color: #fff4f4;
+}
+.infoNotificationBg {
+	background-color: #fef1e6;
+}
+.infoSuccessBg {
+	background-color: #effcd3;
+}
+.txtInfoBarError {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #d42600;
+	text-decoration: none;
+}
+.txtInfoBarNotification {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #e75302;
+	text-decoration: none;
+}
+.txtInfoBarSuccess {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #035e03;
+	text-decoration: none;
+}
+.lnkInfoBarNotification {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: underline;
+}
+.lnkInfoBarNotification:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+/************************************************************ Steps ****************************************************/
+.txtSteps_Unselected {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #adacac;
+	text-decoration: none;
+	padding-bottom: 7px;
+}
+.txtStepsNum_Unselected {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(../images/unSelected_Step.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 7px;
+}
+.txtSteps_selected {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #2a4e86;
+	text-decoration: none;
+	padding-bottom: 7px;
+}
+.txtStepsNum_selected {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	background-image:url(../images/selected_Step.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 7px;
+}
+.panelHeadings {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.txtVerticalSteps {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #0e6fa7;
+	text-decoration: none;
+	background-color: #dee6e9;
+}
+.txtVerticalStepsNum {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(vertical_step_num_bg.gif);
+	background-repeat: no-repeat;
+	text-indent: 7px;
+
+}
+.txtVerticalSteps_view {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.txtStyle05 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.imgBorder {
+	border: 1px solid #C3E5EF;
+}
+.txtStyle06 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #125e9e;
+	text-decoration: none;
+}
+.txtStyle07 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+.themeBg {
+	background-color: #f2f1ea;
+}
+.themeOptionsBg {
+	background-color: #fffff9;
+}
+.txtStyle08 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.txtStyle09 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1a6b91;
+	text-decoration: none;
+}
+.lightBoxDesc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	line-height: 18px;
+}
+.lnklightBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: underline;
+	line-height: 18px;
+}
+.lnklightBox:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	line-height: 18px;
+}
+.lightBoxHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.panelHeadings02 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffd101;
+	text-decoration: none;
+	background-image: url(panelHeadingBG.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}.h_line {
+	background-image: url(horizontal_dotted_line.gif);
+	background-repeat: repeat-x;
+}
+
+/************************************************************ tool tip ***************************************************/
+
+.topImgRepeat {
+	background-image: url(../images/themes/default/tooltip/tooltipSlice_BgTopHorizontal.gif);
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+.tooltipBg {
+	background-color: #FFFFFF;
+	background-image: url(../images/themes/default/tooltip/tooltipSlice-bgTooltip.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-right-color: #a3b8f3;
+	border-left-color: #a3b8f3;
+}
+.tooltipBg02 {
+	background-color: #FFFFFF;
+	background-image: url(../images/themes/default/tooltip/tooltipSlice-bgTooltip02.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-right-color: #a3b8f3;
+	border-left-color: #a3b8f3;
+}
+.txtTooltip {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.bottomImgRepeat {
+	background-image: url(../images/themes/default/tooltip/tooltipSlice_BgBottomHorizontal02.gif);
+	background-repeat: repeat-x;
+}
+.txtLabels {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #125e9e;
+	text-decoration: none;
+}
+.txtLabels02 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+ 
+
+.tab_visitor {
+      display: block;
+      width: 110px;
+      height: 38px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      color: #ffffff;
+      text-decoration: none;
+      background-image:url(menu_bg.gif);
+      line-height:35px; 
+}
+
+.tab_visitor:hover {
+      display: block;
+      width: 110px;
+      height: 38px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      color:#990000;
+      background-image:url(menu_selectedtab_bg.gif);
+      line-height:35px;
+      cursor: pointer;
+}
+
+.tab_visitor_selected {
+      display: block;
+	  width: 110px;
+      height: 38px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+	  color: #212c3c;
+      text-decoration: none;	  
+      background-image:url(menu_selectedtab_bg.gif);
+      line-height: 35px;
+}
+.tab_visitor_selected:hover {
+      display: block;
+	  width: 110px;
+      height: 38px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+	  color: #212c3c;
+      background-image:url(menu_selectedtab_bg.gif);
+      line-height: 35px;
+}
+.txtCategory {
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            color: #11a5c4;
+            text-decoration: none;
+}
+
+.txtPrice {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            color: #d40201;
+            text-decoration: none;
+}
+
+.txtProduct {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: normal;
+            color: #000000;
+            text-decoration: none;
+}
+.txtBoxShopping {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: normal;
+            color: #000000;
+            text-decoration: none;
+            height: 22px;
+            text-align:right;
+            border-top-width: 1px;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-top-color: #999999;
+            border-right-color: #d4d4d4;
+            border-bottom-color: #d4d4d4;
+            border-left-color: #999999;
+}
+.txtLabelBox {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #ececec;
+	border: 1px solid #cdcdcd;
+	width: 180px;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 2px;
+}
+.txtHome {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #585858;
+	text-decoration: none;
+}
+.rootMenuSeperator {
+	width: 2px;
+	height: 38px;
+	background-image: url(menu_seprator.gif);
+}
+.txtConfirmation {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #7f7f7f;
+	text-decoration: none;
+}
+.txtReferenceNo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #6c6fc7;
+	text-decoration: none;
+}
+.txtCustomerSuccess {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #2b7415;
+	text-decoration: none;
+}
+.lnkConfirmation {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #9799c8;
+	text-decoration: underline;
+}
+.lnkConfirmation:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #9799c8;
+	text-decoration: none;
+}
+.txtShortBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+ .gridGroups {
+	background-color: #d9d9d9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.bannerBG{
+	background-color: #FFFFFF;
+}

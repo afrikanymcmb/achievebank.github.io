@@ -1,0 +1,768 @@
+@charset "utf-8";
+.divCtrl{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #535353;
+		text-decoration: none;
+		background-color: #FFFFFF;
+	}
+	.textBox
+	{
+	  background-image:url(../images/transfer/card_types_dis.png); 
+	  background-position:right; 
+	  background-repeat:no-repeat;
+	  width: 220px;	  
+	}
+	.tbDefault
+	{
+	  width: 170px;	  
+	}	
+	.tbAmerican
+	{
+	  background-image:url(../images/transfer/amex.png); 
+	  background-position:right; 
+	  background-repeat:no-repeat;
+	  width: 170px;	  
+	}
+	.tbVisa
+	{
+	  background-image:url(../images/transfer/visa.png); 
+	  background-position:right; 	  background-repeat:no-repeat;
+	  width: 170px;	  
+	}
+	.tbMaster
+	{
+	  background-image:url(../images/transfer/mastercard.png); 
+	  background-position:right; 
+	  background-repeat:no-repeat;
+	  width: 170px;	  
+	}
+	.tbDiscover
+	{
+	  background-image:url(../images/transfer/discover.png); 
+	  background-position:right; 
+	  background-repeat:no-repeat;
+	  width: 170px;	  
+	}
+	.amex_tbpopUp
+	{
+	  background-image:url(../images/transfer/amex.png); 
+	  background-position: left; 
+	  background-repeat:no-repeat;
+	  width: 170px;
+	  padding-left:40px;
+	}
+	.visa_tbpopUp
+	{
+	  background-image:url(../images/transfer/visa.png); 
+	  background-position: left; 
+	  background-repeat:no-repeat;
+	  width: 170px;
+	  padding-left:40px;
+	}
+	.master_tbpopUp
+	{
+	  background-image:url(../images/transfer/mastercard.png); 
+	  background-position: left; 
+	  background-repeat:no-repeat;
+	  width: 170px;
+	  padding-left:40px;
+	}
+	.discover_tbpopUp
+	{
+	  background-image:url(../images/transfer/discover.png); 
+	  background-position: left; 
+	  background-repeat:no-repeat;
+	  width: 170px;
+	  padding-left:40px;
+	}
+	.loading {
+		background:url(../images/loader.gif) no-repeat;
+		height:32px;
+		width:32px;
+		margin:0 auto;
+	}
+	
+	.list{
+		float: left;
+		width: 98%;
+		margin-top: 10px;
+		clear: both; 	
+		font-size: 13px;	
+	}
+	.list .item{
+		border: 1px solid #E3E3E3;
+		float: left;
+		margin-top: 20px;
+		width: 100%;
+		padding: 8px 0 8px 8px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		position: relative;
+		
+	}
+	.list .item .currency{
+		width: 30px;
+		float: left;
+	}
+	.list .item .first{
+		width: 70%;
+		float: left;
+		margin-left: 10px;
+   		margin-top: 4px;
+	}
+	.list .item .second{
+		width: 16%;
+		float: left;
+		text-align: right;
+		margin-top: 2px;
+		position: absolute;
+   		right: 65px;
+	}
+	.list .item .third{
+		width: 4%;
+		float: left;
+		cursor: pointer;
+		text-align: right;
+		margin-right: 5px;
+		position: absolute;
+   		right: 30px;
+	}
+	.list .item .fourth {
+	    float: left;
+	    text-align: right;
+	    width: 2%;
+	    position: absolute;
+   		right: 15px;
+	}
+	.list .item .second span {
+		float: right;
+		 height: 16px;
+   		 margin-top: 2px;
+	}
+	
+	.list .item .second span img{
+		float: left;
+		margin-right: 5px;
+		width: 20px;
+	}
+	
+	.message{
+		font-size:13px;
+		text-align: center;
+		margin-top: 20px;
+	
+	}
+	a.delete img{
+		border: none;
+	}
+		
+	.or	{
+    	padding-left: 73px;
+    	font-weight: bolder;
+	}
+	.publicPageDescription {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		font-weight: normal;
+		color: #424242;
+		text-decoration: none;
+		line-height: 18px;
+	}
+	
+	
+	.actionIcons
+	{ display:inline-block; padding:0 3px; text-decoration:none;}
+	
+	.usemoney
+	{ background:url(../images/icon_usemoney.jpg) no-repeat left top; width:21px; height:15px;}
+	
+	.giftmoney
+	{ background:url(../images/icon_giftmoney.jpg) no-repeat left top; width:16px; height:16px;}
+	
+	.removePurse
+	{ background:url(../images/icon_delete.jpg) no-repeat left top; width:13px; height:16px;}	
+	
+	.usemoney:hover
+	{ background:url(../images/icon_usemoney_hover.jpg) no-repeat left top; width:21px; height:15px;}
+	
+	.giftmoney:hover
+	{ background:url(../images/icon_giftmoney_hover.jpg) no-repeat left top; width:16px; height:16px;}
+	
+	.removePurse:hover
+	{ background:url(../images/icon_delete_hover.jpg) no-repeat left top; width:13px; height:16px;}
+
+	.label_bonus_balnc
+	{font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none; }
+	
+	.bonus_balnc	
+	{font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		font-weight: normal;
+		color: #3e663b;
+		text-decoration: none; }
+	.clearfix
+		{ clear:both; display:block;}
+			
+	.coupon_avalble
+		{ width:100%; padding:15px 0; background:#f1f1f1; border:1px solid #cccccc; border-radius:5px; position:relative;}
+	a.arrow_left
+		{ background:url(arrow_big_left.png) left top no-repeat; width:18px; height:54px; position:absolute; left:5px; top:31%;}
+	a.arrow_right
+		{ background:url(arrow_big_right.png) right top no-repeat; width:18px; height:54px; position:absolute; right:5px; top:31%;}	
+	.coupon_thumbnail {width: 141px;height: 70px;float: left;margin: 28px 10px 0 0;border: 1px solid #999; overflow: hidden;}
+	.coupon_details
+		{float:left; margin:12px 0 0 15px; width:500px; }	
+	
+		
+.page_count
+	{ color:#999; float:right;}	
+		
+		
+.success-message .thumbs-up {
+    background: url("../images/big-tick.png") repeat scroll center top rgba(0, 0, 0, 0);
+    height: 160px;
+    margin: 0 auto;
+    width: 180px;
+}
+.no-activity-txt{ 
+    background:url("../images/no-activity-icon.png") center top no-repeat !important; 
+    padding-top:45px !important; 
+    margin-top: 20px; 
+    text-align: center;
+}
+.coupon-desc-confirm-text{
+	line-height: 150px;
+	height: 150px;
+    margin: 0;
+    vertical-align: top;
+    width: 465px;
+    color: #333333;
+}
+.clear{
+		float:none;
+		clear:both;
+		font-size:0px;
+		line-height:0px;
+	}
+	.sendReceiveMoney-btns{
+		width:400px;
+		margin:0px auto;
+		padding:20px;
+		font-size:12px;
+		color:#147fc3;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	.sendMoney,.receiveMoney{
+		 width:40%;
+		 text-align:center;
+		 float:left;
+	}
+	.sendMoney input, .receiveMoney input {
+	    background: #147fc3;
+	    border-radius: 5px;
+	    border: 0px none;
+	    border-bottom: 3px solid #08619a;
+	    padding: 8px 15px;
+	    font-family: Arial, Helvetica, sans-serif;
+	    font-size: 15px;
+	    color: #fff;
+	    margin-bottom: 5px;
+	    cursor: pointer;
+    } 
+/*****popup steps css*******/
+.popupSteps
+	{width:690px; height:4px; background:#e5e5e5; position:relative; top:10px; margin-bottom: 20px; left: -12px;}
+.progress_popupSteps
+	{height:4px; background:#a0c802; position:absolute; left:150px; }
+.progress_popupSteps.stepOne
+	{width:0;}
+.progress_popupSteps.stepTwo
+	{width:195px;}
+.progress_popupSteps.stepThree
+	{width:390px;}			
+	
+	
+.circle
+	{-webkit-border-radius: 50px 50px 50px 50px;	border-radius: 50px 50px 50px 50px; z-index:1;
+	 padding:6px 7px; border:3px solid #ffffff; position:absolute; top:-15px; color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold;
+	}
+.step_one	
+	{left:0px}	
+ .step_two	
+	{left:180px}
+	
+ .step_three	
+	{left:372px}		
+	
+	
+.step_inactive	
+	{ background:#c2c2c2;}	
+.step_current	
+	{ background:#fdb900;}
+	
+.step_done	
+	{ background:#a0c802;}
+/*STEPS*/
+.breadcrumb {
+	/*centering*/
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 2px;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	counter-reset: flag;
+	  width: 660px;
+}
+.breadcrumb ul {
+	padding: 0px;
+	margin: 0px 10px;
+}
+.breadcrumb ul li {
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 13px;
+	line-height: 36px;
+	color: white;
+	/*need more margin on the left of links to accomodate the numbers*/
+	padding: 0 40px 0 65px;
+	position: relative;
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb ul li:first-child {
+	padding-left: 45px;
+	border-radius: 2px 0 0 2px; /*to match with the parent's radius*/
+}
+.breadcrumb ul li:first-child:before {
+	left: 10px;
+}
+.breadcrumb ul li:last-child {
+	border-radius: 0 2px 2px 0; /*this was to prevent glitches on hover*/
+	padding-right: 100px;
+}
+
+/*hover/active styles*/
+.breadcrumb ul li.active, {
+ background: #10629b;
+}
+.breadcrumb ul li.active:after {
+	background: #10629b;
+}
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb ul li:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -16px; /*half of square's length*/
+	/*same dimension as the line-height of .breadcrumb a */
+	width: 36px;
+	height: 35px;
+	/*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+	transform: scale(0.707) rotate(45deg);
+	/*we need to prevent the arrows from getting buried under the next link*/
+	z-index: 1;
+	/*background same as links but the gradient will be rotated to compensate with the transform applied*/
+	
+	/*stylish arrow design using box shadow*/
+	box-shadow: 2px -2px 0 2px rgba(255, 255, 255, 1),  3px -3px 0 2px rgba(255, 255, 255, 0.1);
+	/*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+	border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.breadcrumb ul li:last-child:after {
+	content: none;
+}
+/*we will use the :before element to show numbers*/
+.breadcrumb ul li:before {
+	content: counter(flag);
+	counter-increment: flag;
+	/*some styles now*/
+	border-radius: 100%;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	margin: 5px 0;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	background: #ccc;
+	font-weight: bold;
+}
+.breadcrumb ul li, .breadcrumb ul li:after {
+	background: #ededed;
+	color: #666;
+	transition: all 0.5s;
+}
+/*----------ACTIVE----------*/
+.breadcrumb ul li.active, .breadcrumb ul li.active:after {
+	background: #10629b;
+	color: #ffffff;
+	transition: all 0.5s;
+}
+.breadcrumb ul li:before {
+	background: #ffffff;
+}
+.breadcrumb ul li.active:before {
+	background: #10629b;
+	box-shadow: 0 0 0 1px #cccccc;
+}
+.breadcrumb ul li.active:before {
+	background: #10629b;
+	box-shadow: 0 0 0 2px #ffffff;
+	color: #ffffff;
+}
+.breadcrumb ul li.active, .breadcrumb ul li.active:after {
+	background: #10629b;
+}
+/*----------DONE----------*/
+.breadcrumb ul li.done, .breadcrumb ul li.done:after {
+	background: #ededed;
+	color: #799a68;
+	transition: all 0.5s;
+}
+.breadcrumb ul li:before {
+	background: #ffffff;
+	box-shadow: 0 0 0 1px #cccccc;
+}
+.breadcrumb ul li.done:before {
+	background: #ffffff;
+	box-shadow: 0 0 0 1px #cccccc;
+}
+.breadcrumb ul li.done:before {
+	background: #cbe6bd;
+	box-shadow: 0 0 0 1px #799a68;
+	color: #799a68;
+}
+.breadcrumb ul li.done, .breadcrumb ul li.done:after {
+	background: #cbe6bd;
+}
+
+.tableheight
+	   	{height:1px;}
+	   	
+
+.NotetxtMandatory {
+    color: rgb(255, 0, 0);
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+#preferenceOptionsDiv label {
+    color: rgb(18, 94, 158);
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+#preferenceOptionsDiv .txtMultiSelect {
+    height: 200px;
+}
+#preferenceOptionsDiv .txtMultiSelect option {
+    color: #000 !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+#NSFPreferencesForm td {
+    vertical-align: top;
+}
+#NSFPreferencesForm td[valign="middle"]{
+
+vertical-align:middle;
+}	   	
+.fourth.purse_actions a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+.list .item .fourth.purse_actions {
+    width: 60px !important;
+}
+.fourth.purse_actions a:last-child{
+	margin-right:0; 
+}
+.list .item .purse_delete_icon{ position:relative; top:-2px; }
+.itemDetail {
+    line-height: 20px;
+    padding-left: 25px;
+}
+
+.divForm {
+   	overflow: hidden;
+}
+.divForm.changecardForm{ 
+	width: 80.2%; 
+}
+.divForm .divFormCol {
+    display:inline-block;
+    vertical-align:top;
+    margin: 0 0 8px;
+    width: 49%;
+}
+/* Card Restrictions */
+.restrictionsBox h2{
+	font-size: 16px;
+    margin: 8px 0 12px;
+}
+.restrictionsBox .RestrictionstextBox{ margin:0 0 25px; line-height: 22px; }
+.restrictionsBox .restrictionsTab{ padding-left:10px; padding-right:10px; }
+.restrictionsList{ max-height: 340px; overflow-y: auto; overflow-x:hidden; }
+.restrictionsList .row{ margin:0 0 15px; }
+.restrictionsList .restrictionsTitle{  
+	display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+    width: 286px;
+}
+.restrictionsList .restrictionsField {
+    display: inline-block;
+    vertical-align: middle;
+    width: 130px;
+    text-align:center;
+    float:right;
+    position:relative;
+}
+.restrictionsList .restrictionsField input[type="text"]{
+	width:70%;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 auto;
+	padding: 2px 20px 2px 2px;
+}
+.restrictionsCheckbox img,
+.restrictionsList .restrictionsField img{
+	display:inline-block;
+	vertical-align:middle;
+	margin: 0 0 0 2px;
+}
+.restrictionsList .restrictionsCheckbox {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 96px;
+    float:right;
+}
+.spendingControlBox {
+    padding: 8px 0;
+    max-height: 494px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.spendingControlBox .row:last-child{ padding:0; border-bottom:none; margin:0; }
+.spendingControlBox .row {
+    border-bottom: 1px dashed #999;
+    margin: 0 0 24px;
+    padding: 0 0 20px;
+}
+.spendingControlBox .row.rowLabels{ padding: 0; }
+.spendingControlBox .spendingControlTitle{ overflow:hidden; margin:0 0 10px; }
+.spendingControlBox .spendingControlAmount{ margin:0 0 8px; }
+.spendingControlBox .spendingControlAmount .buttons{
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:10px;
+	border-radius: 0;
+    font-family: arial;
+    height: 24px;
+    margin-right: 0;
+    min-width: auto !important;
+    padding: 0;
+    width: 64px !important;
+}
+.spendingControlBox .spendingControlTitle h2 {
+    display: inline-block;
+    float: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    vertical-align: middle;
+    width:430px;
+}
+.spendingControlBox .spendingControlTitle .btnEditLimits {
+    color: #0066a4;
+    display: inline-block;
+    float: none;
+    font-size: 15px;
+    margin: -2px 0 0 10px;
+    vertical-align: middle;
+}
+.spendingControlBox .spendingControlTitle .spendingControlCheckbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top:3px;
+    width:92px;
+    text-align:center;
+    float:right;
+}
+.spendingControlBox .spendingControlTitle .spendingControlCheckbox img {
+    display: inline-block;
+    margin: -2px 0 0 3px;
+    vertical-align: middle;
+}
+.spendingControlEdit {
+    display: inline-block;
+    vertical-align: middle;
+    width: 170px;
+    position:relative;
+}
+.spendingControlEdit > img {
+    height: 16px;
+    position: absolute;
+    right: 82px;
+    top: 4px;
+    width: 16px;
+}
+.spendingControlEdit input[type="text"]{
+	width:54%;
+	display: inline-block;
+    vertical-align: middle;
+    padding: 2px 21px 2px 2px;
+}
+.restrictionsAlertsBox {
+    font-size: 13px;
+    line-height: 22px;
+    margin: 30px 0 0;
+    padding: 10px 0 0;
+    font-family: verdana;
+    color:#222;
+}
+.restrictionsTab .restrictionsAlertsBox{ margin: 10px 0 0; padding: 10px 0 0;}
+.cardAccountsSelection .txtComboBox,
+.restrictionsAlertsBox .txtComboBox{ height:27px; font-size:12px; }
+.restrictionsAlertsBox h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 12px;
+    color:#222;
+}
+.restrictionsAlertsBox .row {
+    border-top: 1px dashed #999;
+    padding-bottom: 20px;
+    overflow:hidden;
+}
+.restrictionsAlertsBox .row:first-child{
+	padding-top:14px;
+}
+.restrictionsAlertsBox .row.last{
+	border-bottom:none;
+	text-align:right;
+	padding:20px 0 10px;
+}
+.restrictionsAlertsBox p{
+	margin:0 0 10px;
+}
+.restrictionsField.editAble > img {
+    height: auto;
+    position: absolute;
+    right: 22px;
+    top: 6px;
+    width: 16px;
+}
+.rescrictinsChoices > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.rescrictinsChoices li {
+    float: left;
+    margin: 0 20px 0 0;
+}
+.restrictionsAlertsBox {
+    font-size: 13px;
+    line-height: 22px;
+}
+.cardAccountsSelection{
+	border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 15px;
+    text-align:right;
+}
+.btnRow {
+    border-top: 1px dashed #999;
+    padding-top: 20px;
+}
+#cardAccountForm {
+    margin: 0;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button{ font-family: Arial,Helvetica,sans-serif !important; }
+.table-datetimeRestrictions .label {    font-size: 12px;    font-style: normal;    width: 100px;}
+		.table-datetimeRestrictions  select{border: 1px solid #ccc;   }
+		.table-datetimeRestrictions tr td {    padding: 0 0 10px !important;}
+		.table-datetimeRestrictions tr:last-child td {    padding: 0 !important;}
+		.table-datetimeRestrictions td select {    font-size: 12px;    min-width: 100px;    padding: 2px 5px;}
+		.date-numbers button, .date-numbers button.selected:hover{    background: transparent ;    border: 1px solid #ccc;    color: #232323;    cursor: pointer;    font-size: 12px;    margin: 0 4px 6px 0;    min-width: 23px !important;    padding: 2px 0 !important;    text-align: center !important;}
+		.week-days button, .week-days button.selected:hover{    background: transparent ;    border: 1px solid #ccc;    color: #232323;    cursor: pointer;    font-size: 12px;    margin: 0 2px 6px 0;    min-width: 50px !important;    padding: 2px 2px !important;    text-align: center !important;}
+		.date-numbers button:hover,
+		.date-numbers button.selected,
+		.week-days button:hover,
+		.week-days button.selected{    background: #00cfcf ;    border-color: #08509a;    color: #fff;}
+		.input-time {    border: 1px solid #ccc;    margin-right: 30px;    text-align: center;    width: 50px !important;}
+		.input-date{ border: 1px solid #ccc;    margin-right: 5px;    text-align: center;    width: 90px !important;}
+		.label.width70 {    width: 70px !important;}
+		.start-end-time {    width: 100% !important;}
+		.table-datetimeRestrictions {    width: 100% !important;}
+		.pull-right {    float: right;}
+		 label[for="applyAllDays"] {    margin-right: 10px;}
+		 .ui-datepicker.ui-helper-hidden-accessible { clip: auto; }
+		 
+		 td.nowrap{white-space: nowrap; padding: 8px 0;}
+		 td.note{ padding: 0px 0 8px;vertical-align: middle;color: #ff0000;line-height: 16px;}
+		 
+#OTPDialog a { outline: none; text-decoration: none; color: #527bdb; }
+#OTPDialog p { line-height: 1.3; font-size: 12px; text-align: justify; }
+#OTPDialog .txtBox { width: 100%; }
+#OTPDialog .buttons { display: inline-block; width: 50%; border: 1px solid rgba(0,0,0,0.15); font-size: 12px; font-weight: 600; line-height: 1; }
+#OTPDialog .buttons:hover, #OTPDialog .buttons:focus { border: 1px solid rgba(0,0,0,0.25); }
+#OTPDialog .actionTd { vertical-align: middle; padding: 15px 20px 0; }
+
+#privacyCookieAcceptBar { color: rgb(255, 255, 255);background-color: rgb(83, 83, 83);padding: 16px 28px;position: relative;}
+#privacyCookieAcceptBar p { font-size: 16px;line-height: 24px;margin-right: 26px;margin-bottom: 0;margin-top: 0;}	
+#privacyCookieAcceptBar a.privacy-link {color: #fff;opacity: 0.8;display: inline-block;text-decoration: underline;font-size: 16px;line-height: 24px;font-weight: normal;	}
+#privacyCookieAcceptBar a.privacy-link:hover { text-decoration: none; opacity: 1;}
+#privacyCookieAcceptBar #privacyCookieClose {position: absolute;top: 15px;right: 16px;left: auto;border-radius: 50%;border: 1px solid #fff;color: #fff;height: 30px;width: 30px;display: block;text-align: center;font-size: 15px;padding-top: 5px;font-weight: normal;vertical-align: middle;box-sizing: border-box;text-decoration: none;}
+#privacyCookieAcceptBar #privacyCookieClose:hover {text-decoration: none;}
+
+/* =====================
+FEE SUMMARY
+*/
+.feeSummaryCon table{ width: 100%;padding: 1px 3px 5px; }
+.feeSummaryCon * {    color: #000;font-size: 12px;}
+.feeSummaryTitle {  min-width: 25%;}
+
+/* =====================
+TRANSFER HISTORY
+*/
+.transferHistoryTab {    margin: 0 0 10px; width: 100%;}
+.transferHistoryTab span, .transferHistoryTab strong {  color: #000000;}
+.transferHistoryTab .feeSummaryTitle {    color: #000;}
+.transHistPagination {  width: 100%;  margin: 0px 0 5px;  border-top: 1px solid #dbdbdb;  padding: 5px 0;}
+
+
+/* =====================
+Unsubscribe Campaign
+*/
+.u-campaign .divFormCol { margin-bottom:20px; }
+
+.u-campaign .divFormCol .txtForm { min-width: 150px;
+    width: 150px;
+    display: inline-block; }
+
+.u-campaign .divFormCol .captcha-Field { display: block; margin: 0 0 0 154px; }
+.u-campaign .divFormCol .captcha-Field input { min-width: 200px; max-width: 200px; }
+.u-campaign .divFormCol .txtBox { min-width: 200px; }
+.u-campaign .divFormCol { position:relative; }
+.u-campaign .divFormCol .help-tip { position: absolute; right: 38px; }
+.u-campaign .divFormCol .captcha-label { vertical-align: top; padding: 20px 0; }

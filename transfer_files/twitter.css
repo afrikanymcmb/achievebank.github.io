@@ -1,0 +1,43 @@
+#twitter_div {
+    width: 180px;
+}
+ul#twitter_update_list {
+    color: #1A455A;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	font-size:11px;
+}
+ul#twitter_update_list li {
+	font-family:Arial, Helvetica, sans-serif;
+    border-bottom: 1px dotted #bfd3f1;
+    line-height: 18px;
+    margin: 0;
+    padding: 0.8em 0 1em;
+}
+ul#twitter_update_list li a {
+	font-family:Arial, Helvetica, sans-serif;
+    color: #4397BD;
+    text-decoration: none;
+}
+ul#twitter_update_list li a:hover {
+    text-decoration: underline;
+}
+ul#twitter_update_list li span {
+    display: block;
+}
+ul#twitter_update_list li span a {
+    color: #4397BD;
+    text-decoration: none;
+}
+ul#twitter_update_list li span a:hover {
+    text-decoration: underline;
+}
+ul#twitter_update_list li.firstTweet {
+}
+ul#twitter_update_list li.lastTweet {
+    border-bottom: medium none;
+}
+ul#twitter_update_list li:last-child {
+    border-bottom: medium none;
+}

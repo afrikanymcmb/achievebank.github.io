@@ -1,0 +1,100 @@
+#footerLinkList li {
+	display: inline;
+	list-style-type: none;
+	padding-left: 5px;
+	margin-left: 5px;
+	border-left: 1px solid black;
+	vertical-align: middle;
+}
+
+#footerLogos IMG {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.ULClass {
+	list-style-image: url(../images/bullet_arrow.gif);
+	border: 0px;;
+	margin: 0px;;
+	padding-left: 20px;
+	line-height: 14px;
+	width: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #3d505e;
+	text-decoration: none;
+}
+
+#menuBarLinksTD a { margin-left: 3px; margin-right: 3px; }
+.txtCustomStyle{font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px;font-weight: normal;color: #3d505e;text-decoration: none;}
+.txtCustomStyle:hover{	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 10px;	font-weight: normal;	color: #000000;	text-decoration: none;}
+.lnkHome1{font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px;font-weight: normal;	color: #3d505e;	text-decoration: none;}
+.lnkHome1:hover{	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 10px;	font-weight: normal;	color: #000000;	text-decoration: underline;}
+#paraId a{margin-left: 1.5px; margin-right: 1.5px;}
+.separator a {margin-left: 3px; margin-right: 3px;}
+
+.cmsFeed {
+	height: 200px;
+	max-height: 250px;
+	width: 195px;
+	max-width: 205px;
+	overflow: scroll;
+	background-position: center;
+	overflow-x: hidden;
+	text-align: center;
+}
+table tr td .border-color { border:1px solid #f3f3f3;}
+.border-color tr td{ border:1px solid #cfcfcf;}
+.web_dialog_overlay
+{
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   background: #000000;
+   opacity: .15;
+   filter: alpha(opacity=15);
+   -moz-opacity: .15;
+   z-index: 101;
+   display: none;
+}
+.web_dialog
+{
+   display: none;
+   position: fixed;
+   width: 380px;
+   height: 200px;
+   top: 50%;
+   left: 50%;
+   margin-left: -190px;
+   margin-top: -100px;
+   background-color: #ffffff;
+   border: 2px solid #336699;
+   padding: 0px;
+   z-index: 102;
+   font-family: Verdana;
+   font-size: 10pt;
+}
+.web_dialog_title
+{
+   border-bottom: solid 2px #336699;
+   background-color: #336699;
+   padding: 4px;
+   color: White;
+   font-weight:bold;
+}
+.web_dialog_title a
+{
+   color: White;
+   text-decoration: none;
+}
+.align_right
+{
+   text-align: right;
+}

@@ -1,0 +1,82 @@
+/************* captcha styling *************/
+/* Dev 1 */
+.table-fixed { table-layout: fixed; }
+.captcha-area .captcha-Field, .captcha-area .captcha-img-btn { display: table; width: 100%; table-layout: fixed; }
+.captcha-area .captcha-Field > *, .captcha-img-btn > *{ display: table-cell; vertical-align: top; }
+.captcha-area .tooltip-img, .captcha-img-btn > a { width: 28px; vertical-align: middle; }
+.captcha-area .captcha-img img { display: block; max-width: 94%; height: auto; }
+.captcha-area .captcha-img-btn { margin: 0 0 10px; }
+.captcha-area .captcha-label { margin: 0 0 7px; }
+.captcha-area .tooltip-img { text-align: center; }
+.captcha-area .tooltip-img img { display: inline-block; vertical-align: top; cursor: pointer; }
+.captcha-area .captcha-input .txtBox { width: 145px; }
+.g-recaptcha { transform-origin: 0 0 0; -ms-transform-origin: 0 0 0; }
+.loginBoxBg .g-recaptcha {transform: scale(0.61); -ms-transform: scale(0.61); transform-origin: 0 0 0; -ms-transform-origin: 0 0 0; }
+.loginBoxBg .has-google-checkbox { height: 50px; }
+.loginBoxBg .captcha-area { width: 90%; }
+.loginBoxBg .captcha-area .captcha-img img { display: block; }
+.loginBoxBg .captcha-area .captcha-img img,
+.loginBoxBg .captcha-area .captcha-input .txtBox { width: 130px; max-width: 100%; }
+/*.loginBoxBg .scale-62 .g-recaptcha { transform: scale(0.62); -ms-transform: scale(0.62); }*/
+.loginBoxBg .scale-69 .g-recaptcha { transform: scale(0.69); -ms-transform: scale(0.69); }
+.loginBoxBg .scale-61 .g-recaptcha { transform: scale(0.61); -ms-transform: scale(0.61); }
+.loginBoxBg .txtBox { width: 100%; }
+.captcha-area .captcha-input.has-error-img input { width: calc(100% - 30px); }
+.inner-captcha.scale-66 .g-recaptcha { transform: scale(0.66); -ms-transform: scale(0.66); }
+.inner-captcha.scale-66 .has-google-checkbox { height: 52px; }
+.max-188 .captcha-area { max-width: 188px; }
+.inner-captcha .captcha-area label {
+	margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1a6b91;
+    text-decoration: none;
+
+}
+.grecaptcha-badge{
+    width: 256px;
+    height: 60px;
+    display: block;
+    transition: right 0.3s ease 0s;
+    position: fixed;
+    bottom: 14px;
+    right: -186px;
+    box-shadow: grey 0px 0px 5px;
+    border-radius: 2px;
+    overflow: hidden;
+    visibility: visible !important;
+}
+.grecaptcha-badge:hover {
+    right: 0;
+}
+
+.inner-captcha .captcha-area .captcha-label { margin: 0; }
+.gen-scale-69 .g-recaptcha { transform: scale(0.69); -ms-transform: scale(0.69); }
+.gen-scale-69 .has-google-checkbox { height: 54px; }
+.gen-scale-78 .g-recaptcha { transform: scale(0.78); -ms-transform: scale(0.78); }
+.gen-scale-78 .has-google-checkbox { height: 62px; }
+.label-white .captcha-area label { color: #fff; } 
+.label-green .captcha-area label { color: #2fb34b; } 
+.label-c1 .captcha-area label { color: #c1c1c1; }
+
+/* Dev 2 */
+.captcha-tr--secure .g-recaptcha {transform: scale(0.667); -ms-transform: scale(0.667); transform-origin: 0 0 0; -ms-transform-origin: 0 0 0; } 
+.captcha-tr--secure .has-google-checkbox { height: 50px; } 
+.captcha-tr--secure.scale-62 .g-recaptcha { transform: scale(0.62); -ms-transform: scale(0.62); } 
+.captcha-tr--secure.scale-69 .g-recaptcha { transform: scale(0.69); -ms-transform: scale(0.69); } 
+.captcha-tr--secure.scale-61 .g-recaptcha { transform: scale(0.61); -ms-transform: scale(0.61); } 
+.secure-captcha-style .txtBox {max-width: 201px; width: 100%;}
+.secure-captcha-style .captcha-area .captcha-input .txtBox{ width: 100%; height: auto;}
+.secure-captcha-style .visual-verf-field {position: relative;}
+.secure-captcha-style .visual-verf-field .txtBox {min-width: 201px;}
+.secure-captcha-style .visual-verf-field .txtBox + img {position: absolute; right: -17px; top: 1px;}
+.secure-captcha-style .captcha-area {max-width: 232px;}
+.secure-tc-row #TermsAndConditionsChkBox{vertical-align: middle; margin:-3px 5px 0 0;}
+.secure-captcha-style .captcha-area .tooltip-img, .secure-captcha-style .captcha-img-btn > a { vertical-align: middle;}
+.secure-captcha-style .captcha-area .tooltip-img, .secure-captcha-style .captcha-img-btn > a  img{transform: scale(0.68); -ms-transform: scale(0.68);}
+.secure-captcha-style .captcha-area .captcha-img img {max-width: 100%;}
+.table-layout-auto {table-layout: auto !important;}
+.u-campaign-inner-table tr td:first-child {width: 150px;}
+.secure-captcha-style  .help-tip {vertical-align: middle;}
+

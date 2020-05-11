@@ -1,0 +1,48 @@
+	#container{	
+		margin:0 auto;
+		position:relative;
+		text-align:left;
+		width:334px;
+		background:#fff;
+		margin-bottom:2em;
+		}
+	#slider ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider li{ 
+		margin:0;
+		padding:0;
+		list-style:none;
+		width:334px;
+		height:110px;
+		overflow:hidden;
+		}
+	#prevBtn, #nextBtn{ 
+		display:block;
+		width:20px;
+		height:46px;
+		position:absolute;
+		left:-20px;
+		top:38px;
+		margin:0;
+    	padding:0;
+    	overflow:hidden;
+    	text-indent:-8000px;
+		}	
+	#nextBtn{ 
+		left:334px;
+		}														
+	#prevBtn a{  
+		display:block;
+		width:20px;
+		height:46px;
+		background:url(../../images/icoupons/left_arrow.jpg) no-repeat 0 0;	
+		}	
+	#nextBtn a{ 
+		display:block;
+		width:20px;
+		height:46px;
+		background:url(../../images/icoupons/right_arrow.jpg) no-repeat 0 0;	
+		}

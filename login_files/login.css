@@ -1,0 +1,470 @@
+html {
+ overflow-y: scroll !important; /* Scrollbar to be fixed either there is content available or not.*/
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	margin: 0px;
+	background-image: url(bg.gif);
+}
+.balanceHeadings {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+.publicNewsDate {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+.loginBoxBg {
+	background-color: #204d7f;
+}
+.loginBoxLeftBg{
+	background-color: #204d7f;
+}
+.loginBoxRightBg{
+	background-color: #204d7f;
+}
+.loginBoxCurve{
+	background-color: #204d7f;
+}
+.loginBoxBottomBg {
+	background-color: #dee6e9;
+}
+.txtMandatory {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+	line-height: 18px;
+}
+.tabBg {
+	background-color: #FFFFFF;
+}
+.lnkViewAll {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #cd822c;
+	text-decoration: none;
+}
+.lnkViewAll:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #cd822c;
+	text-decoration: underline;
+}
+.txtCopyrights {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #848484;
+	text-decoration: none;
+}
+.txtFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #585858;
+	text-decoration: none;
+}
+.lnkFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #585858;
+	text-decoration: underline;
+}
+.lnkFooter:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #585858;
+	text-decoration: none;
+}
+
+
+.txtSearchBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #F3C4C5;
+	height: 19px;
+}
+.headings02 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	color: #204d7f;
+	text-decoration: none;
+}
+.loginHeadings {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	color: #bcdce8;
+	text-decoration: none;
+	background-color: #204d7f;
+}
+.activateHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	color: #bcdce8;
+	text-decoration: none;
+}
+.lightBoxDesc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	line-height: 18px;
+}
+.lnklightBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: underline;
+	line-height: 18px;
+}
+.lnklightBox:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	line-height: 18px;
+}
+.lightBoxHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.txtStyle02 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.txtAnnouncements {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+.txtStyle03 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.loginSubHeadings {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.txtBox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #e5e0ca;
+	height: 18px;
+}
+.txtStyle01 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.buttons {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #92b2be;
+	border: 1px solid #a5ccdb;
+	width: 122px;
+}
+.lnkStyle01 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+.lnkStyle01:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.lnkStyle02 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.lnkStyle02:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.bannerBottomBg {
+	background-color: #dedede;
+}
+.lnkHome{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #3d505e;
+	text-decoration: none;
+}
+.lnkHome:hover{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #3d505e;
+	text-decoration: underline;
+}
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.signUpBoxBg {
+	background-color: #000000;
+}
+.activateBoxBg {
+	background-color:#fcce07;
+}
+.loginSubHeadings02 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #B50102;
+	text-decoration: none;
+}
+.buttons02 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #B50102;
+	border: 1px solid #c45f5f;
+	width: 60px;
+}
+.loginHeadings02 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	color: #B50102;
+	text-decoration: none;
+}
+.txtError {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid #000000;
+	background-color: #FFFFE1;
+}
+.tab_visitor {
+	display: block;
+	width: 110px;
+	height: 44px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	background-image:url(menu_bg.gif);
+	line-height:40px;
+	background-color: #000000;
+	background-repeat: repeat-x;
+}
+
+.tab_visitor:hover {
+      display: block;
+      width: 110px;
+      height: 44px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      color:#990000;
+      background-image:url(menu_tabOver.gif);
+      line-height:40px;
+      cursor: pointer;
+	  background-color: #e2e2e2;
+	  background-repeat: repeat-x;
+}
+.tab_visitor_selected {
+	width: 110px;
+	height: 44px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #212c3c;
+	text-decoration: none;
+	background-image:url(../images/themes/default/menu_tabOver.gif);
+	background-color: #f3ecbe;
+	background-repeat: repeat-x;
+}
+.blankTab{
+	background-image:url(../images/themes/default/menu_bg.gif);
+	background-color: #000000;
+	background-repeat: repeat-x;
+}.txtStyle04 {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+/***************************************************************** Tabs Navigation Style ******************************************************/
+/* Not Used */
+.tabText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+}
+/* Not Used */
+.tabTextOver {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+}
+/* Not Used */
+.tab {
+	display: block;
+	width: 143px;
+	height: 38px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	background-image: url(menu_bg.gif);
+	line-height: 35px;
+}
+/* Not Used */
+.tabOver {
+	display: block;
+	width: 143px;
+	height: 38px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #ed1c16;
+	background-image: url(menu_tabOver.gif);
+	line-height: 35px;
+	cursor: pointer;
+}
+/* Not Used */
+.tabSelected {
+	width: 143px;
+	height: 38px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #212c3c;
+	text-decoration: none;
+	background-image: url(menu_selectedtab_bg.gif);
+	cursor: pointer;
+}
+
+.emptyTab {
+	height: 38px;
+	background-image: url(menu_bg.gif);
+}
+.rootMenuSeperator {
+	width: 2px;
+	height: 38px;
+	background-image: url(menu_seprator.gif);
+}
+.widgetBg {
+	background-color: #FFFFFF;
+}
+.widgetHeading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #5a471c;
+	text-decoration: none;
+}
+.txtInfoBarSuccess {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #035e03;
+	text-decoration: none;
+}
+.infoSuccessBg {
+	background-color: #effcd3;
+}
+.card_txtbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 2px solid #e5ecff;
+	height: 23px;
+	width: 130px;
+}
